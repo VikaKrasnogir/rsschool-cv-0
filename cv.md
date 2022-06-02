@@ -61,7 +61,7 @@ if (!login) {
 
 ## **Experience**
 
-[My CV](https://github.com/VikaKrasnogir/rsschool-cv/blob/gh-pages/CV.md)
+[My CV](https://github.com/VikaKrasnogir/rsschool-cv/blob/gh-pages/cv.md)
 
 ---
 
