@@ -29,6 +29,11 @@ dd {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color:black;
+}
+
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
@@ -37,50 +42,11 @@ body {
   line-height: 1.5;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Указываем понятную периодичность в потоке данных у article*/
-article>*+* {
-  margin-top: 1em;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
 header {
   width: 100%;
   margin-bottom: 50px;
   /* border: solid 2px; */
+  padding-top: 18px;
 }
 
 nav {
@@ -94,7 +60,11 @@ nav {
 li {
   list-style-type: none;
   display: inline;
-  margin: 0 30px;
+  margin: 0 40px;
+}
+
+.navigation li a {
+  font-size: 18px;
 }
 
 .main-container {
@@ -124,6 +94,11 @@ li {
   text-align: center;
 }
 
+.card-text {
+  text-align: start;
+  margin-top: 10px;
+}
+
 .image {
   /* border: solid 2px olive; */
   width: 30%;
@@ -131,8 +106,8 @@ li {
 }
 
 .card-image {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   object-fit: cover;
   border: solid 4px;
@@ -144,6 +119,7 @@ li {
   display: flex;
   justify-content: flex-start;
   height: 100%;
+  margin-top: 30px;
 }
 
 .about-me {
@@ -159,11 +135,11 @@ li {
 }
 
 .section-my-education {
-  border: solid 2px orchid;
+  /* border: solid 2px orchid; */
   display: flex;
   justify-content: flex-start;
   height: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .education {
@@ -179,8 +155,8 @@ li {
 }
 
 .section-my-skills {
-  border: solid 2px maroon;
-  margin-top: 100px;
+  /* border: solid 2px maroon; */
+  margin-top: 50px;
 }
 
 .tech-skills {
@@ -192,39 +168,88 @@ li {
 }
 
 .experience {
-  border: solid 2px maroon;
-  margin-top: 100px;
+  /* border: solid 2px maroon; */
+  margin-top: 50px;
   text-align: center;
 }
 
 .project-1 {
   text-align: left;
+  font-size: 20px;
+}
+
+.project-1 a {
 }
 
 .section-my-code-example {
-  border: solid 2px rosybrown;
-  margin-top: 100px;
+  /* border: solid 2px rosybrown; */
+  margin-top: 50px;
 }
 
 .code-example {
   /* border: solid 2px violet; */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.example {
+  /* border: solid 2px violet; */
+  width: 90%;
+  margin: 10px auto 0;
+  padding: 10px;
+  text-align: left;
+  background-color: rgb(229, 224, 224);
+  border-radius: 15px;
+}
 
 footer {
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
-  border: solid 1px green;
+  /* border: solid 1px green; */
+  margin-top: 50px;
+}
+
+.course {
+  /* border: solid 2px darkcyan; */
+  display: flex;
+  height: 100%;
+  text-align: center;
+}
+
+.logo-rs-school {
+  /* border: solid 2px darkcyan; */
+  /* display: flex;
+  justify-content: flex-start; */
+  width: 35%;
+  height: 100px;
+}
+
+.rsschool {
+  padding-top: 15px;
+  padding-left: 20%;
+}
+
+.year-of-creation {
+  /* border: solid 2px darkcyan; */
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  width: 35%;
+  height: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.year {
+  padding-top: 30px;
+}
+
+.my-github {
+  /* border: solid 2px darkcyan; */
+  /* display: flex;
+  justify-content: flex-start; */
+  width: 35%;
+  height: 100px;
+}
+
+.github-akk {
+  padding-left: 45%;
+  padding-top: 20px;
 }
