@@ -31,7 +31,7 @@ dd {
 
 a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -45,8 +45,12 @@ body {
 header {
   width: 100%;
   margin-bottom: 50px;
-  /* border: solid 2px; */
   padding-top: 18px;
+  background: linear-gradient(rgb(229, 158, 229), rgb(250, 233, 250))
+}
+
+body {
+  background-color: rgb(250, 233, 250);
 }
 
 nav {
@@ -67,31 +71,36 @@ li {
   font-size: 18px;
 }
 
+.navigation li a:hover {
+  color: rgb(137, 83, 137);
+}
+
 .main-container {
   width: 80%;
   margin: 0 auto;
-  /* border: solid 1px red; */
 }
 
 .section-about-me {
-  /* border: solid 2px green; */
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .card1 {
-  /* border: solid 2px orange; */
   display: flex;
   justify-content: flex-start;
   height: 100%;
 }
 
 .card-title {
-  /* border: solid 2px palegreen; */
   width: 70%;
   height: 100px;
   text-align: center;
+}
+
+.card-about-me {
+  display: flex;
+  margin-top: 30px;
 }
 
 .card-text {
@@ -100,9 +109,7 @@ li {
 }
 
 .image {
-  /* border: solid 2px olive; */
   width: 30%;
-
 }
 
 .card-image {
@@ -110,32 +117,38 @@ li {
   height: 200px;
   border-radius: 100%;
   object-fit: cover;
-  border: solid 4px;
+  border: solid 4px rgb(137, 83, 137);
   margin: 0 auto;
 }
 
 .card2 {
-  /* border: solid 2px purple; */
   display: flex;
   justify-content: flex-start;
   height: 100%;
   margin-top: 30px;
 }
 
-.about-me {
-  /* border: solid 2px royalblue; */
+.ambitions {
   width: 50%;
   height: 150px;
 }
 
 .my-contacts {
-  /* border: solid 2px hotpink; */
   width: 50%;
   height: 150px;
 }
 
+.contacts li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.contacts li a:hover {
+  color: rgb(137, 83, 137);
+}
+
 .section-my-education {
-  /* border: solid 2px orchid; */
   display: flex;
   justify-content: flex-start;
   height: 100%;
@@ -143,32 +156,32 @@ li {
 }
 
 .education {
-  /* border: solid 2px blueviolet; */
   width: 50%;
   height: 100px;
 }
 
 .languages {
-  /* border: solid 2px black; */
   width: 50%;
   height: 100px;
 }
 
+.my-languages li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
 .section-my-skills {
-  /* border: solid 2px maroon; */
   margin-top: 50px;
 }
 
-.tech-skills {
-  /* border: solid 2px maroon; */
-}
-
-.section-my-experience {
-  /* border: solid 2px darkcyan; */
+.skills li {
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .experience {
-  /* border: solid 2px maroon; */
   margin-top: 50px;
   text-align: center;
 }
@@ -178,46 +191,36 @@ li {
   font-size: 20px;
 }
 
-.project-1 a {
+.project-1 a:hover {
+  color: rgb(137, 83, 137);
 }
 
 .section-my-code-example {
-  /* border: solid 2px rosybrown; */
   margin-top: 50px;
 }
 
-.code-example {
-  /* border: solid 2px violet; */
-}
-
 .example {
-  /* border: solid 2px violet; */
   width: 90%;
   margin: 10px auto 0;
   padding: 10px;
   text-align: left;
-  background-color: rgb(229, 224, 224);
+  background-color: rgb(231, 218, 231);
   border-radius: 15px;
 }
 
 footer {
-  /* height: 100px; */
   width: 100%;
-  /* border: solid 1px green; */
   margin-top: 50px;
+  background: linear-gradient(rgb(196, 158, 196), rgb(245, 118, 245))
 }
 
 .course {
-  /* border: solid 2px darkcyan; */
   display: flex;
   height: 100%;
   text-align: center;
 }
 
 .logo-rs-school {
-  /* border: solid 2px darkcyan; */
-  /* display: flex;
-  justify-content: flex-start; */
   width: 35%;
   height: 100px;
 }
@@ -228,9 +231,6 @@ footer {
 }
 
 .year-of-creation {
-  /* border: solid 2px darkcyan; */
-  /* display: flex; */
-  /* justify-content: flex-start; */
   width: 35%;
   height: 100px;
   font-size: 20px;
@@ -242,9 +242,6 @@ footer {
 }
 
 .my-github {
-  /* border: solid 2px darkcyan; */
-  /* display: flex;
-  justify-content: flex-start; */
   width: 35%;
   height: 100px;
 }
