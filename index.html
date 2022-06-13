@@ -1,1 +1,107 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li>About me</li>
+        <li>Education</li>
+        <li>Skills</li>
+        <li>Experience</li>
+        <li>Code example</li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-container">
+    <section class="section-about-me">
+      <div class="card1">
+        <div class="card-title">
+          <h1>Viktoria Krasnogir</h1>
+          <h2>Junior Frontend Developer</h2>
+        </div>
+        <div class="image">
+          <img class="card-image" src="/rsschool-cv/assets/photo.jpg" alt="Me">
+        </div>
+      </div>
+      <div class="card2">
+        <div class="about-me">
+          <h2>My ambitions</h2>
+          <p>To become a competitive Front-end Developer</p>
+          <p><b>Soft skills:</b> Teamwork</p>
+        </div>
+        <div class="my-contacts">
+          <h2>My contacts</h2>
+          <p><b>Location:</b> Minsk, Belarus</p>
+          <p><b>E-mail:</b> vikakrasnogir269@gmail.com</p>
+          <p><b>Discord:</b><a href="https://discord.com/channels/Vika Krasnogir#3710">Vika Krasnogir</a></p>
+          <p><b>Github:</b><a href="https://github.com/VikaKrasnogir">VikaKrasnogir</a></p>
+        </div>
+      </div>
+    </section>
+    <section class="section-my-education">
+      <div class="education">
+        <h2>Education</h2>
+        <p><b>2012-2016</b> International University "MITSO" - Economist</p>
+      </div>
+      <div class="languages">
+        <h2>Languages</h2>
+        <p><b>Russian:</b> Native</p>
+        <p><b>English:</b> Pre-Intermediate</p>
+      </div>
+    </section>
+    <section class="section-my-skills">
+      <div class="tech-skills">
+        <h2>Skills</h2>
+        <p><b>Languages:</b> JavaScript</p>
+        <ul class="web-skills">
+          <p><b>Web frontend-development skills:</b></p>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+        <p><b>Tools:</b> Visual Studio Code</p>
+      </div>
+    </section>
+    <section class="section-my-experience">
+      <div class="experience">
+        <h2>Experience</h2>
+        <p class="project-1"><a href="https://github.com/VikaKrasnogir/rsschool-cv/blob/gh-pages/cv.md">My CV</a></p>
+      </div>
+    </section>
+    <section class="section-my-code-example">
+      <div class="code-example">
+        <h2>Code Example</h2>
+        <p><pre>let login = prompt("Кто там?");
+          if (!login) {
+            alert("Отменено");
+          } else if (login !== "Админ") {
+            alert("Я Вас не знаю");
+          } else {
+            let password = prompt("Пароль?");
+            if (!password) {
+              alert("Отменено");
+            } else if (password !== "Я главный") {
+              alert("Неверный пароль");
+            } else {
+              alert("Здравствуйте!");
+            }
+          }</pre>
+          </p>
+      </div>
+    </section>
+  </div>
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>

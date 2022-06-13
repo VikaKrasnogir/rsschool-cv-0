@@ -1,2 +1,230 @@
-Hello, my name Vika
-Rainy weather
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+header {
+  width: 100%;
+  margin-bottom: 50px;
+  /* border: solid 2px; */
+}
+
+nav {
+  margin: 10px 0;
+}
+
+.navigation {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 30px;
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  /* border: solid 1px red; */
+}
+
+.section-about-me {
+  /* border: solid 2px green; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card1 {
+  /* border: solid 2px orange; */
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.card-title {
+  /* border: solid 2px palegreen; */
+  width: 70%;
+  height: 100px;
+  text-align: center;
+}
+
+.image {
+  /* border: solid 2px olive; */
+  width: 30%;
+
+}
+
+.card-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: solid 4px;
+  margin: 0 auto;
+}
+
+.card2 {
+  /* border: solid 2px purple; */
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.about-me {
+  /* border: solid 2px royalblue; */
+  width: 50%;
+  height: 150px;
+}
+
+.my-contacts {
+  /* border: solid 2px hotpink; */
+  width: 50%;
+  height: 150px;
+}
+
+.section-my-education {
+  border: solid 2px orchid;
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.education {
+  /* border: solid 2px blueviolet; */
+  width: 50%;
+  height: 100px;
+}
+
+.languages {
+  /* border: solid 2px black; */
+  width: 50%;
+  height: 100px;
+}
+
+.section-my-skills {
+  border: solid 2px maroon;
+  margin-top: 100px;
+}
+
+.tech-skills {
+  /* border: solid 2px maroon; */
+}
+
+.section-my-experience {
+  /* border: solid 2px darkcyan; */
+}
+
+.experience {
+  border: solid 2px maroon;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.project-1 {
+  text-align: left;
+}
+
+.section-my-code-example {
+  border: solid 2px rosybrown;
+  margin-top: 100px;
+}
+
+.code-example {
+  /* border: solid 2px violet; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  height: 100px;
+  width: 100%;
+  border: solid 1px green;
+}
