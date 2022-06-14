@@ -1,2 +1,244 @@
-Hello, my name Vika
-Rainy weather
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 50px;
+  padding-top: 18px;
+  background: linear-gradient(rgb(229, 158, 229), rgb(250, 233, 250))
+}
+
+body {
+  background-color: rgb(250, 233, 250);
+}
+
+.navigation {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 40px;
+}
+
+.navigation li a {
+  font-size: 18px;
+}
+
+.navigation li a:hover {
+  color: rgb(137, 83, 137);
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-about-me {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card1 {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.card-title {
+  width: 70%;
+  height: 100px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 35px;  
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.card-about-me {
+  display: flex;
+  margin-top: 30px;
+}
+
+.card-text {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.image {
+  width: 30%;
+}
+
+.card-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: solid 4px rgb(137, 83, 137);
+}
+
+.card2 {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.ambitions {
+  width: 50%;
+  height: 150px;
+}
+
+.my-contacts {
+  width: 50%;
+  height: 150px;
+}
+
+.contacts li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.contacts li a:hover {
+  color: rgb(137, 83, 137);
+}
+
+.section-my-education {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.education {
+  width: 50%;
+  height: 100px;
+}
+
+.languages {
+  width: 50%;
+  height: 100px;
+}
+
+.my-languages li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.section-my-skills {
+  margin-top: 50px;
+}
+
+.skills li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.experience {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.project-1 {
+  text-align: left;
+  font-size: 20px;
+}
+
+.project-1 a:hover {
+  color: rgb(137, 83, 137);
+}
+
+.section-my-code-example {
+  margin-top: 50px;
+}
+
+.example {
+  width: 90%;
+  margin: 10px auto 0;
+  padding: 10px;
+  text-align: left;
+  background-color: rgb(231, 218, 231);
+  border-radius: 15px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+  background: linear-gradient(rgb(196, 158, 196), rgb(245, 118, 245));
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-rs-school {
+  width: 35%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year-of-creation {
+  width: 35%;
+  height: 100px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-github {
+  width: 35%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
