@@ -53,10 +53,6 @@ body {
   background-color: rgb(250, 233, 250);
 }
 
-nav {
-  margin: 10px 0;
-}
-
 .navigation {
   text-align: center;
 }
@@ -98,6 +94,11 @@ li {
   text-align: center;
 }
 
+h1 {
+  font-size: 35px;  
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .card-about-me {
   display: flex;
   margin-top: 30px;
@@ -118,7 +119,6 @@ li {
   border-radius: 100%;
   object-fit: cover;
   border: solid 4px rgb(137, 83, 137);
-  margin: 0 auto;
 }
 
 .card2 {
@@ -211,23 +211,18 @@ li {
 footer {
   width: 100%;
   margin-top: 50px;
-  background: linear-gradient(rgb(196, 158, 196), rgb(245, 118, 245))
-}
-
-.course {
+  background: linear-gradient(rgb(196, 158, 196), rgb(245, 118, 245));
   display: flex;
-  height: 100%;
-  text-align: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .logo-rs-school {
   width: 35%;
   height: 100px;
-}
-
-.rsschool {
-  padding-top: 15px;
-  padding-left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .year-of-creation {
@@ -235,18 +230,15 @@ footer {
   height: 100px;
   font-size: 20px;
   text-align: center;
-}
-
-.year {
-  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .my-github {
   width: 35%;
   height: 100px;
-}
-
-.github-akk {
-  padding-left: 45%;
-  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

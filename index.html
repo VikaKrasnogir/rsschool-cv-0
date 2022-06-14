@@ -11,22 +11,21 @@
 
 <body>
   <header>
-    <nav>
-      <ul class="navigation">
-        <li class="navigation-btn"><a href="#about-me">About me</a></li>
-        <li class="navigation-btn"><a href="#my-education">Education</a></li>
-        <li class="navigation-btn"><a href="#my-skills">Skills</a></li>
-        <li class="navigation-btn"><a href="#my-experience">Experience</a></li>
-        <li class="navigation-btn"><a href="#my-code-example">Code example</a></li>
-      </ul>
-    </nav>
+    <ul class="navigation">
+      <li class="navigation-btn"><a href="#about-me">About me</a></li>
+      <li class="navigation-btn"><a href="#my-education">Education</a></li>
+      <li class="navigation-btn"><a href="#my-skills">Skills</a></li>
+      <li class="navigation-btn"><a href="#my-experience">Experience</a></li>
+      <li class="navigation-btn"><a href="#my-code-example">Code example</a></li>
+    </ul>
   </header>
   <div class="main-container">
-
     <section class="section-about-me">
       <div class="card1">
         <div class="card-title">
-          <h1><a name="about-me"></a>Viktoria Krasnogir</h1>
+          <a id="about-me">
+            <h1>Viktoria Krasnogir</h1>
+          </a>
           <h2>Junior Frontend Developer</h2>
           <div class="card-about-me">
             <p class="card-text">My specialization is website development, coding layouts for your website or web
@@ -48,8 +47,8 @@
           <p>To become a competitive Front-end Developer</p>
         </div>
         <div class="my-contacts">
+          <h2>My contacts</h2>
           <ul class="contacts">
-            <h2>My contacts</h2>
             <li>
               <p><b>Location:</b> Minsk, Belarus</p>
             </li>
@@ -57,7 +56,7 @@
               <p><b>E-mail:</b> vikakrasnogir269@gmail.com</p>
             </li>
             <li>
-              <p><b>Discord:</b><a href="https://discord.com/channels/Vika Krasnogir#3710"> Vika Krasnogir</a></p>
+              <p><b>Discord:</b><a href="https://discord.com/channels/VikaKrasnogir#3710"> Vika Krasnogir</a></p>
             </li>
             <li>
               <p><b>Github:</b><a href="https://github.com/VikaKrasnogir"> VikaKrasnogir</a></p>
@@ -68,46 +67,54 @@
     </section>
     <section class="section-my-education">
       <div class="education">
-        <h2><a name="my-education">Education</a></h2>
+        <a id="my-education">
+          <h2>Education</h2>
+        </a>
         <p><b>2012-2016</b> International University "MITSO" - Economist</p>
       </div>
       <div class="languages">
+        <h2>Languages</h2>
         <ul class="my-languages">
-          <h2>Languages</h2>
           <li>
             <p><b>Russian:</b> Native</p>
           </li>
           <li>
             <p><b>English:</b> Pre-Intermediate</p>
           </li>
+        </ul>
       </div>
     </section>
     <section class="section-my-skills">
       <div class="tech-skills">
+        <h2><a id="my-skills"></a>Skills</h2>
         <ul class="skills">
-          <h2><a name="my-skills"></a>Skills</h2>
           <li>
             <p><b>Languages:</b> JavaScript</p>
           </li>
-          <ul class="web-skills">
+          <li>
             <p><b>Web frontend-development skills:</b></p>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </li>
           <li>
             <p><b>Tools:</b> Visual Studio Code</p>
           </li>
         </ul>
+      </div>
     </section>
     <section class="section-my-experience">
       <div class="experience">
-        <h2><a name="my-experience"></a>Experience</h2>
+        <a id="my-experience"></a>
+        <h2>Experience</h2>
         <p class="project-1"><a href="https://github.com/VikaKrasnogir/rsschool-cv/blob/gh-pages/cv.md">My CV.md</a></p>
       </div>
     </section>
     <section class="section-my-code-example">
       <div class="code-example">
-        <h2><a name="my-code-example"></a>Code Example</h2>
+        <a id="my-code-example"></a>
+        <h2>Code Example</h2>
         <div class="example">
           <pre>
             let login = prompt("Кто там?");
@@ -130,31 +137,19 @@
     </section>
   </div>
   <footer>
-    <section class="course">
-      <div class="logo-rs-school">
-        <div class="rsschool">
-          <p>
-            <a href="https://rs.school/js/">
-              <img src="/rsschool-cv/assets/rs-Logo.svg" width="150" alt="logo-RS-school">
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="year-of-creation">
-        <div class="year">
-          <p><b>2022 by Vika Krasnogir</b></p>
-        </div>
-      </div>
-      <div class="my-github">
-        <div class="github-akk">
-          <p>
-            <a href="https://github.com/VikaKrasnogir">
-              <img src="/rsschool-cv/assets/logo-Github.png" width="45" alt="logo-Github">
-            </a>
-          </p>
-        </div>
-      </div>
-    </section>
+    <div class="logo-rs-school">
+      <a href="https://rs.school/js/">
+        <img src="/rsschool-cv/assets/rs-Logo.svg" width="150" alt="logo-RS-school">
+      </a>
+    </div>
+    <div class="year-of-creation">
+      <p><b>2022 by Vika Krasnogir</b></p>
+    </div>
+    <div class="my-github">
+      <a href="https://github.com/VikaKrasnogir">
+        <img src="/rsschool-cv/assets/logo-Github.png" width="45" alt="logo-Github">
+      </a>
+    </div>
   </footer>
 </body>
 
